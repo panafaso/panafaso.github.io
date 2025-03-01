@@ -81,22 +81,3 @@ h1 {
     color: #333;
     line-height: 1.6;
 }
-
-.profile-section {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.linkedin-icon {
-    width: 40px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-
-.linkedin-icon:hover {
-    transform: scale(1.2);
-}
