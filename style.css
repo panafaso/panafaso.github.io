@@ -81,36 +81,43 @@ h1 {
     text-align: justify; /* Justifies the text */
 }
 
-/* Διόρθωση του container για καλύτερη διάταξη */
 .image2-text-container {
     display: flex;
-    flex-direction: column; /* Εναλλαγή σε κάθετη διάταξη (εικόνα πάνω, κείμενο κάτω) */
-    align-items: center; /* Κεντράρισμα του περιεχομένου */
-    justify-content: flex-start; /* Ξεκινά από πάνω */
-    gap: 20px; /* Κενό μεταξύ εικόνας και κειμένου */
-    max-width: 1000px; /* Προσαρμογή του πλάτους */
-    margin: 20px auto; /* Κεντράρισμα στο κέντρο της σελίδας */
+    flex-direction: column; /* Εικόνα πάνω, κείμενο κάτω */
+    align-items: center; /* Κεντράρισμα */
+    justify-content: flex-start;
+    gap: 10px; /* Μείωση της απόστασης μεταξύ επικεφαλίδας και κειμένου */
+    max-width: 1000px;
+    margin: 20px auto;
 }
 
 .image2-text-container img {
-    max-width: 700px; /* Προσαρμογή μεγέθους εικόνας */
+    max-width: 700px;
     height: auto;
     border: 2px solid #333;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Στοίχιση του κειμένου */
-.image2-text-container .text-content {
-    flex: 1; /* Το κείμενο καταλαμβάνει το υπόλοιπο διαθέσιμο χώρο */
-    text-align: justify; /* Στοίχιση του κειμένου πλήρως */
-    text-justify: inter-word; /* Εξασφαλίζει καλύτερη στοίχιση των λέξεων */
-    line-height: 1.6; /* Αυξάνει την απόσταση μεταξύ των γραμμών */
-    font-size: 1.1em; /* Ελαφρύς αύξηση του μεγέθους της γραμματοσειράς */
-    margin-bottom: 10px; /* Απόσταση κάτω από το κείμενο */
-}
-
+/* Επικεφαλίδα */
 .title-of-mytext {
     font-size: 2em;
     font-weight: bold;
     color: darkred;
-    text-align: center; /* Κεντράρισμα της επικεφαλίδας */
+    text-align: center;
+    margin-bottom: 5px; /* Μείωση απόστασης από το κείμενο */
+}
+
+/* Κείμενο μέσα σε τετράγωνο */
+.text-content {
+    flex: 1;
+    text-align: justify; /* Πλήρης στοίχιση */
+    text-justify: inter-word;
+    line-height: 1.5;
+    font-size: 1.1em;
+    background-color: #f8f8f8; /* Απαλό γκρι φόντο */
+    padding: 15px; /* Κενά γύρω από το κείμενο */
+    border: 2px solid #333; /* Περίγραμμα για τετράγωνο σχήμα */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Προσαρμογή στο container */
+    max-width: 700px; /* Περιορισμός μέγιστου πλάτους */
+}
