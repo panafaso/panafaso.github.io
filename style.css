@@ -33,6 +33,11 @@ h1 {
     text-align: center;
 }
 
+.special-title {
+    color: blue;
+    text-align: center;
+}
+
 .about-container {
     width: 50%;
     max-width: 600px;
