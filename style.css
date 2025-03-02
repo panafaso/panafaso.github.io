@@ -33,11 +33,6 @@ h1 {
     text-align: center;
 }
 
-.special-title {
-    color: blue;
-    text-align: center;
-}
-
 .about-container {
     width: 50%;
     max-width: 600px;
@@ -85,3 +80,37 @@ h1 {
     flex: 1; /* Takes remaining space */
     text-align: justify; /* Justifies the text */
 }
+
+/* Διόρθωση του container για καλύτερη διάταξη */
+.image-text-container {
+    display: flex;
+    flex-direction: column; /* Εναλλαγή σε κάθετη διάταξη (εικόνα πάνω, κείμενο κάτω) */
+    align-items: center; /* Κεντράρισμα του περιεχομένου */
+    justify-content: flex-start; /* Ξεκινά από πάνω */
+    gap: 20px; /* Κενό μεταξύ εικόνας και κειμένου */
+    max-width: 1000px; /* Προσαρμογή του πλάτους */
+    margin: 20px auto; /* Κεντράρισμα στο κέντρο της σελίδας */
+}
+
+.image-text-container img {
+    max-width: 700px; /* Προσαρμογή μεγέθους εικόνας */
+    height: auto;
+    border: 2px solid #333;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Στοίχιση του κειμένου */
+.image-text-container .text-content {
+    flex: 1; /* Το κείμενο καταλαμβάνει το υπόλοιπο διαθέσιμο χώρο */
+    text-align: justify; /* Στοίχιση του κειμένου πλήρως */
+    text-justify: inter-word; /* Εξασφαλίζει καλύτερη στοίχιση των λέξεων */
+    line-height: 1.6; /* Αυξάνει την απόσταση μεταξύ των γραμμών */
+    font-size: 1.1em; /* Ελαφρύς αύξηση του μεγέθους της γραμματοσειράς */
+    margin-bottom: 20px; /* Απόσταση κάτω από το κείμενο */
+}
+
+.special-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: blue;
+    text-align: center; /* Κεντράρισμα της επικεφαλίδας */
