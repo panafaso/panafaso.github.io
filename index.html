@@ -33,30 +33,29 @@
             <p>Visualización de datos (Spanish)</p> 
 
 <!-- SVG Animation -->
-<svg id="animation-svg" width="700" height="700">
-    <!-- Orange Square (Welcome) -->
-    <g id="square-group">
-        <rect id="square" x="50" y="50" width="150" height="150" fill="orange"></rect>
-        <text x="85" y="140" font-size="28" fill="white">Welcome</text>
-        <animateTransform id="squareAnim" attributeName="transform" type="translate" 
-            values="0,0; 0,30; 0,0" dur="0.5s" repeatCount="indefinite"/>
+<svg id="animation-svg" width="600" height="400">
+    <!-- Dark Gray Square (Welcome) -->
+    <g id="square-group-1">
+        <rect id="square-1" x="50" y="50" width="120" height="120" fill="darkgray"></rect>
+        <text x="80" y="120" font-size="20" fill="white">Welcome</text>
+        <animateTransform id="squareAnim1" attributeName="transform" type="translate" 
+            values="0,0; 0,20; 0,0" dur="0.5s" repeatCount="indefinite"/>
     </g>
 
     <!-- Red Circle (to) -->
     <g id="circle-group">
-        <circle id="circle" cx="250" cy="150" r="75" fill="red"></circle>
-        <text x="230" y="160" font-size="28" fill="white">to</text>
+        <circle id="circle" cx="250" cy="110" r="60" fill="red"></circle>
+        <text x="235" y="115" font-size="22" fill="white">to</text>
         <animateTransform id="circleAnim" attributeName="transform" type="translate" 
-            values="0,0; 0,-30; 0,0" dur="0.5s" repeatCount="indefinite"/>
+            values="0,0; 0,-20; 0,0" dur="0.5s" repeatCount="indefinite"/>
     </g>
 
-    <!-- Yellow Star (my website) -->
-    <g id="star-group">
-        <polygon id="star" points="400,100 440,190 530,190 460,250 480,340 400,290 320,340 340,250 270,190 360,190"
-            fill="yellow"></polygon>
-        <text x="360" y="220" font-size="24" fill="black">my website</text>
-        <animateTransform id="starAnim" attributeName="transform" type="translate" 
-            values="0,0; 0,40; 0,0" dur="0.5s" repeatCount="indefinite"/>
+    <!-- Dark Gray Square (my website) -->
+    <g id="square-group-2">
+        <rect id="square-2" x="400" y="50" width="140" height="140" fill="darkgray"></rect>
+        <text x="420" y="120" font-size="18" fill="white">my website</text>
+        <animateTransform id="squareAnim2" attributeName="transform" type="translate" 
+            values="0,0; 0,30; 0,0" dur="0.5s" repeatCount="indefinite"/>
     </g>
 </svg>
 
