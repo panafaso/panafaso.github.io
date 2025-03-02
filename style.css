@@ -70,7 +70,7 @@ h1 {
 }
 
 .image-text-container img {
-    max-width: 350px; /* Increase image size */
+    max-width: 600px; /* Increase image size */
     height: auto;
     border: 2px solid #333;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
