@@ -32,33 +32,33 @@
             <p>Datavisualisering (Swedish)</p> 
             <p>Visualización de datos (Spanish)</p> 
 
-            <!-- SVG Animation -->
-            <svg id="animation-svg" width="500" height="500">
-                <!-- Orange Square (Welcome) -->
-                <g id="square-group">
-                    <rect id="square" x="50" y="50" width="100" height="100" fill="orange"></rect>
-                    <text x="80" y="110" font-size="20" fill="white">Welcome</text>
-                    <animateTransform id="squareAnim" attributeName="transform" type="translate" 
-                        values="0,0; 0,20; 0,0" dur="0.5s" repeatCount="indefinite"/>
-                </g>
+<!-- SVG Animation -->
+<svg id="animation-svg" width="700" height="700">
+    <!-- Orange Square (Welcome) -->
+    <g id="square-group">
+        <rect id="square" x="50" y="50" width="150" height="150" fill="orange"></rect>
+        <text x="85" y="140" font-size="28" fill="white">Welcome</text>
+        <animateTransform id="squareAnim" attributeName="transform" type="translate" 
+            values="0,0; 0,30; 0,0" dur="0.5s" repeatCount="indefinite"/>
+    </g>
 
-                <!-- Red Circle (to) -->
-                <g id="circle-group">
-                    <circle id="circle" cx="200" cy="100" r="50" fill="red"></circle>
-                    <text x="185" y="110" font-size="20" fill="white">to</text>
-                    <animateTransform id="circleAnim" attributeName="transform" type="translate" 
-                        values="0,0; 0,-20; 0,0" dur="0.5s" repeatCount="indefinite"/>
-                </g>
+    <!-- Red Circle (to) -->
+    <g id="circle-group">
+        <circle id="circle" cx="250" cy="150" r="75" fill="red"></circle>
+        <text x="230" y="160" font-size="28" fill="white">to</text>
+        <animateTransform id="circleAnim" attributeName="transform" type="translate" 
+            values="0,0; 0,-30; 0,0" dur="0.5s" repeatCount="indefinite"/>
+    </g>
 
-                <!-- Yellow Star (my website) -->
-                <g id="star-group">
-                    <polygon id="star" points="300,80 320,130 370,130 330,160 350,210 300,180 250,210 270,160 230,130 280,130"
-                        fill="yellow"></polygon>
-                    <text x="275" y="150" font-size="16" fill="black">my website</text>
-                    <animateTransform id="starAnim" attributeName="transform" type="translate" 
-                        values="0,0; 0,30; 0,0" dur="0.5s" repeatCount="indefinite"/>
-                </g>
-            </svg>
+    <!-- Yellow Star (my website) -->
+    <g id="star-group">
+        <polygon id="star" points="400,100 440,190 530,190 460,250 480,340 400,290 320,340 340,250 270,190 360,190"
+            fill="yellow"></polygon>
+        <text x="360" y="220" font-size="24" fill="black">my website</text>
+        <animateTransform id="starAnim" attributeName="transform" type="translate" 
+            values="0,0; 0,40; 0,0" dur="0.5s" repeatCount="indefinite"/>
+    </g>
+</svg>
 
         </section>
     </div>
