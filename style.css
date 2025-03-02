@@ -84,10 +84,10 @@ h1 {
 .image2-text-container {
     display: flex;
     flex-direction: column; /* Εικόνα πάνω, κείμενο κάτω */
-    align-items: center; /* Κεντράρισμα */
-    justify-content: flex-start;
-    gap: 10px; /* Μείωση της απόστασης μεταξύ επικεφαλίδας και κειμένου */
-    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Απόσταση μεταξύ εικόνας και κειμένου */
+    max-width: 900px;
     margin: 20px auto;
 }
 
@@ -107,17 +107,14 @@ h1 {
     margin-bottom: 5px; /* Μείωση απόστασης από το κείμενο */
 }
 
-/* Κείμενο μέσα σε τετράγωνο */
 .text-content {
-    flex: 1;
-    text-align: justify; /* Πλήρης στοίχιση */
-    text-justify: inter-word;
+    text-align: justify; /* Βελτίωση της στοίχισης */
     line-height: 1.5;
     font-size: 1.1em;
-    background-color: #f8f8f8; /* Απαλό γκρι φόντο */
-    padding: 15px; /* Κενά γύρω από το κείμενο */
-    border: 2px solid #333; /* Περίγραμμα για τετράγωνο σχήμα */
+    background-color: #f8f8f8;
+    padding: 15px;
+    border: 2px solid #333;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    width: 90%; /* Προσαρμογή στο container */
-    max-width: 700px; /* Περιορισμός μέγιστου πλάτους */
+    width: 90%;
+    max-width: 700px;
 }
