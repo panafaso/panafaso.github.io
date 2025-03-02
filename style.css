@@ -60,12 +60,6 @@ h1 {
     text-decoration: underline;
 }
 
-.animated-title {
-    text-align: center;
-    font-size: 3em;
-    animation: colorChange 3s infinite;
-}
-
 .image-text-container {
     display: flex;
     align-items: flex-start; /* Aligns image and text properly */
