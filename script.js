@@ -1,20 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const circle = document.querySelector('circle');
-    const rect = document.querySelector('rect');
-    const polygon = document.querySelector('polygon');
+    const squareAnim = document.getElementById('squareAnim');
+    const circleAnim = document.getElementById('circleAnim');
+    const starAnim = document.getElementById('starAnim');
 
-    
-    circle.addEventListener('click', function() {
-        circle.style.display = circle.style.display === 'none' ? 'block' : 'none';
+    function toggleAnimation(animation) {
+        if (animation.getAttribute('repeatCount') === 'indefinite') {
+            animation.setAttribute('repeatCount', '0'); // Freeze
+        } else {
+            animation.setAttribute('repeatCount', 'indefinite'); // Resume
+        }
+    }
+
+    document.getElementById('square-group').addEventListener('click', function() {
+        toggleAnimation(squareAnim);
     });
 
-    
-    rect.addEventListener('click', function() {
-        rect.style.animationPlayState = rect.style.animationPlayState === 'paused' ? 'running' : 'paused';
+    document.getElementById('circle-group').addEventListener('click', function() {
+        toggleAnimation(circleAnim);
     });
 
-    
-    polygon.addEventListener('click', function() {
-        polygon.style.fill = polygon.style.fill === 'red' ? 'blue' : 'red';
+    document.getElementById('star-group').addEventListener('click', function() {
+        toggleAnimation(starAnim);
     });
 });
