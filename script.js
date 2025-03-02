@@ -1,25 +1,30 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const squareAnim = document.getElementById('squareAnim');
-    const circleAnim = document.getElementById('circleAnim');
-    const starAnim = document.getElementById('starAnim');
-
+document.addEventListener('DOMContentLoaded', function () {
     function toggleAnimation(animation) {
-        if (animation.getAttribute('repeatCount') === 'indefinite') {
-            animation.setAttribute('repeatCount', '0'); // Freeze
+        if (animation.hasAttribute('data-paused')) {
+            animation.beginElement(); // Ξεκινάει ξανά
+            animation.removeAttribute('data-paused');
         } else {
-            animation.setAttribute('repeatCount', 'indefinite'); // Resume
+            animation.endElement(); // Σταματάει
+            animation.setAttribute('data-paused', 'true');
         }
     }
 
-    document.getElementById('square-group').addEventListener('click', function() {
-        toggleAnimation(squareAnim);
+    // Αντικείμενο: Freeze και Resume του πρώτου τετραγώνου
+    document.getElementById('square1-group').addEventListener('click', function () {
+        const square1Anim = document.getElementById('square1Anim');
+        toggleAnimation(square1Anim);
     });
 
-    document.getElementById('circle-group').addEventListener('click', function() {
-        toggleAnimation(circleAnim);
+    // Αντικείμενο: Εξαφάνιση του δεύτερου τετραγώνου
+    document.getElementById('square2-group').addEventListener('click', function () {
+        const square2 = document.getElementById('square2');
+        if (square2.style.display === 'none') {
+            square2.style.display = 'block'; // Επαναφορά του τετραγώνου
+        } else {
+            square2.style.display = 'none'; // Απόκρυψη του τετραγώνου
+        }
     });
 
-    document.getElementById('star-group').addEventListener('click', function() {
-        toggleAnimation(starAnim);
-    });
+    // Αντικείμενο: Συνεχής κίνηση του κύκλου
+    // Δεν χρειάζεται toggle για τον κύκλο, καθώς αυτός κινείται συνέχεια
 });
