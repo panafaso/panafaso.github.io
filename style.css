@@ -82,7 +82,7 @@ h1 {
 }
 
 /* Διόρθωση του container για καλύτερη διάταξη */
-.image-text-container {
+.image2-text-container {
     display: flex;
     flex-direction: column; /* Εναλλαγή σε κάθετη διάταξη (εικόνα πάνω, κείμενο κάτω) */
     align-items: center; /* Κεντράρισμα του περιεχομένου */
@@ -92,7 +92,7 @@ h1 {
     margin: 20px auto; /* Κεντράρισμα στο κέντρο της σελίδας */
 }
 
-.image-text-container img {
+.image2-text-container img {
     max-width: 700px; /* Προσαρμογή μεγέθους εικόνας */
     height: auto;
     border: 2px solid #333;
@@ -100,7 +100,7 @@ h1 {
 }
 
 /* Στοίχιση του κειμένου */
-.image-text-container .text-content {
+.image2-text-container .text-content {
     flex: 1; /* Το κείμενο καταλαμβάνει το υπόλοιπο διαθέσιμο χώρο */
     text-align: justify; /* Στοίχιση του κειμένου πλήρως */
     text-justify: inter-word; /* Εξασφαλίζει καλύτερη στοίχιση των λέξεων */
@@ -109,7 +109,7 @@ h1 {
     margin-bottom: 10px; /* Απόσταση κάτω από το κείμενο */
 }
 
-.special-title {
+.title-of-mytext {
     font-size: 2em;
     font-weight: bold;
     color: blue;
