@@ -19,6 +19,10 @@ nav a {
     font-size: 1.2em;
 }
 
+.clicked {
+    fill: blue !important;
+}
+
 nav a:hover {
     text-decoration: underline;
 }
