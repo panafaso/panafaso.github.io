@@ -23,3 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const circle = document.getElementById("circle");
+
+    circle.addEventListener("click", function () {
+        this.classList.toggle("clicked");
+    });
+});
